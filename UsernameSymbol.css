@@ -55,6 +55,6 @@
 /* Settings/My Account */
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
     color: inherit;
-    font-family: Segoe UI, system-ui, sans-serif;
+    font-family: Segoe UI;
     content: "@";
 }
