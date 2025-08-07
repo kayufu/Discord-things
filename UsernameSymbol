@@ -1,0 +1,59 @@
+/* Add "@" before Usernames */
+/* User Panel Area */
+[class^=avatarWrapper_] [class^=nameTag_] [class^=hovered_]::before,
+/* Switch Accounts */
+[class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
+[class^=accountCard_] [class^=userDetails_] [class^=username_]::before,
+/* Content & Social in Settings */
+[class^=settingsPage_] [class^=usersList_] [class^=row_] [class^=userInfo_] [class="text-sm/medium_cf4812"]::before,
+/* Profiles */
+:where([class^=inner_]):not(:has([class^=userTagDiscriminator_])) :where([class^=userTag])::before,
+/* ReviewDB Plugin */
+.vc-rdb-review:not(:has([class*=botTag_])) [class*=username_]::before,
+/* Mod View (Impossible to ignore Bots - would require a Plugin) */
+[class^=sidebarContainer__] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
+[class^=guildSidebar_] [class^=memberNameContainer_] [class="text-md/medium_cf4812"]::before,
+/* Start of DMs (Impossible to ignore Bots - would require a Plugin) */
+[class^=chatContent_] [class^=messagesWrapper_] [class^=container_] [class*=marginBottom20_]::before,
+/* Application User Interaction Information */
+[id="message-view-interaction-info--interaction-user"] [class^=label_]::before,
+/* Report User Profile */
+[class^=slideContainer_] [class^=content_] [class^=userContainer_]:has([class*=userIcon_]) [class="text-sm/normal_cf4812"]::before,
+/* Quick Switcher Search Results / Server Search Results (Impossible to ignore Bots - would require a Plugin) */
+[class^=quickswitcher_] [class^=username_]::before,
+[class^=resultsGroup_] [class^=displayUsername_]::before,
+/* Message Box Auto Complete */
+[class*=autocompleteRow_]:has([class^=autocompleteRowIcon_] [class^=pointerEvents_]) [class^="text-xs/normal_cf4812"]:not(:has([class^=descriptionDiscriminator_]))::before,
+/* Forward To */
+:has([class^=forwardPreviewWrapper_]) [class^=identity_]:has([class^=pointerEvents_]) [class^="text-xs/normal_cf4812"]::before,
+/* Polls */
+[class^=votersListContainer_] [class^=voters_] [class^=username_]::before,
+/* View Reactions */
+[class^=reactorsContainer_] [class*=reactor_]:not(:has([class^=discriminator_])) [class^=username_]::before,
+/* Members List (Impossible to ignore Bots - would require a Plugin) */
+[class^=roundedRow_] [class="text-xs/normal_cf4812"]::before,
+/* Roles/Add Member */
+[class^=addMemberRow_]:not(:has([class^=botTagRegular_])) [class*=rowLabelSubText_]::before,
+/* Roles/Members */
+[class^=memberRow_]:not(:has([class^=botTag_])) [class*=userTag_]::before,
+/* Emoji */
+[class^=emojiRow_] [class^=colorStandard_]::before,
+/* Stickers */
+[class^=tiers_] [class^=user_] [class="text-xs/normal_dc00ef"]::before,
+/* Soundboard */
+[class^=soundTable_] [class^=uploader_] [class^=defaultColor_]::before,
+/* Audit Log (Impossible to ignore Bots - would require a Plugin) */
+[class^=auditLog_] [class^=title_]:not(:has([class*=discrim_])) [class^=defaultColor_]::before,
+/* Audit Log Filter By User */
+[class^=combobox_] [class^=item_]:not(:has([class*=discriminator_])) [class^=defaultColor_]::before,
+/* Ban List */
+[class^=bannedUser_]:not(:has([class*=discrim_])) [class^=username_]::before,
+/* Friends List */
+[class^=peopleListItem_] [class^=infoSpacing_]::before,
+/* Select Friends / Create DM */
+[class^=friendWrapper_] [class*=discordTag_]::before,
+/* Settings/My Account */
+[class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
+    color: inherit;
+    content: "@";
+}
