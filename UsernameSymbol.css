@@ -54,6 +54,6 @@
 [class^=friendWrapper_] [class*=discordTag_]::before,
 /* Settings/My Account */
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
-    color: var(inherit);
+    color: inherit;
     content: "@";
 }
