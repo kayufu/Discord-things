@@ -1,6 +1,5 @@
 /* Add "@" before Usernames */
 /* User Panel Area */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 [class^=avatarWrapper_] [class^=nameTag_] [class^=hovered_]::before,
 /* Switch Accounts */
 [class^=submenu_] [class^=userMenuUsername] [class^=defaultColor_]::before,
@@ -56,6 +55,6 @@
 /* Settings/My Account */
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
     color: inherit;
-    font-family: 'Inter', sans-serif;
+    font-family: "Whitney", "Helvetica Neue", Helvetica, Arial, sans-serif;
     content: "@";
 }
