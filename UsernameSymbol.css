@@ -55,5 +55,6 @@
 /* Settings/My Account */
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
     color: inherit;
+    font-family: 'GG Sans', sans-serif;
     content: "@";
 }
