@@ -56,5 +56,4 @@
 [class^=accountProfileCard_] [class^=field_]:nth-last-child(3) [class^=usernameInnerRow_]::before {
     color: inherit;
     content: "@";
-    font-family: system-ui, sans-serif;
 }
