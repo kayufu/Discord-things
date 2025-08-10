@@ -14,7 +14,7 @@
   border-top: none !important;
   border-bottom: none !important;
   border-right: none !important;
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   .embedSuppressButton__623de {
     /* fix for it not showing up */
     opacity: calc(1 * var(--wh-always-show-suppress-embed-button)) !important;
