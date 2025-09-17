@@ -1,3 +1,10 @@
+/**
+ * @name BorderedEmbeds
+ * @author NSPG911 & blade0
+ * @version 1.0.0
+ * @description Adds a full border to your embeds. Need I say more?
+ * @source https://github.com/NSPC911/themes
+*/
 :root {
   --wh-border-width: 4px;
   --wh-background-opacity: 0%;
@@ -11,10 +18,10 @@
   overflow: hidden;
   border-left-width: 0px !important;
   padding-left: 4px;
+  border-radius: 10px !important;
   border-top: none !important;
   border-bottom: none !important;
   border-right: none !important;
-  border-radius: 10px !important;
   .embedSuppressButton__623de {
     /* fix for it not showing up */
     opacity: calc(1 * var(--wh-always-show-suppress-embed-button)) !important;
